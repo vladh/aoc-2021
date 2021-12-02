@@ -10,4 +10,4 @@ clean:
 	rm bin/*
 
 bin/%: %.c
-	gcc $< -o $@
+	gcc --std=c99 $< -o $@
