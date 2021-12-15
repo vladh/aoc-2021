@@ -10,4 +10,4 @@ clean:
 	rm bin/*
 
 bin/%: %.c
-	gcc -ggdb --std=c99 $< -o $@ -lm
+	gcc -ggdb --std=gnu99 $< -o $@ -lm
