@@ -10,10 +10,10 @@ clean:
 	rm bin/*
 
 bin/19-1: 19-1.c
-	gcc -ggdb --std=gnu99 $< -o $@ -lm -lcglm
+	gcc -Ofast -Wno-unused-result -ggdb --std=gnu99 $< -o $@ -lm -lcglm
 
 bin/19-2: 19-2.c
-	gcc -ggdb --std=gnu99 $< -o $@ -lm -lcglm
+	gcc -Ofast -Wno-unused-result -ggdb --std=gnu99 $< -o $@ -lm -lcglm
 
 bin/%: %.c
-	gcc -ggdb --std=gnu99 $< -o $@ -lm
+	gcc -Ofast -Wno-unused-result -ggdb --std=gnu99 $< -o $@ -lm
