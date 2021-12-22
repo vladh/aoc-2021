@@ -1,4 +1,4 @@
-C_FILES=$(shell find . -name \*.c -printf '%P\n')
+C_FILES=$(shell find . -maxdepth 1 -name \*.c -printf '%P\n')
 BIN_FILES_BARE=$(C_FILES:.c=)
 BIN_FILES=$(addprefix bin/,${BIN_FILES_BARE})
 
